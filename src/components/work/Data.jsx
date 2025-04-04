@@ -80,13 +80,6 @@ export const projectsData = [
     category: "Coding Profiles",
     link: "https://codolio.com/profile/sakshi_saraswat",
   },
-  {
-    id: 11,
-    title: "AI Agents",
-    category: "AI Agents",
-    description: "AI Agents will be uploaded soon...",
-    isTextOnly: true,
-  },
 ];
 
 export const projectsNav = [
@@ -98,8 +91,5 @@ export const projectsNav = [
   },
   {
     name: "Coding Profiles",
-  },
-  {
-    name: "AI Agents",
   },
 ];

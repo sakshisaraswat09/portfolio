@@ -26,7 +26,7 @@ const Footer = () => {
             href="https://www.linkedin.com/in/sakshi-saraswat-7497a0253/"
             className="footer__social-link"
             target="_blank"
-            rel="noopener noreferrer"
+            rel="noreferrer"
           >
             <i class="fa-brands fa-linkedin"></i>
           </a>

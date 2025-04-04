@@ -14,12 +14,12 @@ const About = () => {
           <Info />
 
           <p className="about__description">
-            Hi there! I'm Sakshi Saraswat, a software developer with a passion
-            for turning complex problems into elegant solutions. With expertise
-            in JavaScript, Python, Node.js, React.js, and HTML/CSS, I craft code
-            that's as robust as it is clean. Dive into my portfolio to see how I
-            blend creativity and technology to deliver exceptional digital
-            experiences.
+            Hi there! I'm Sakshi Saraswat, a student and aspiring software
+            developer passionate about solving complex problems with creative
+            solutions. I'm currently building my skills in JavaScript, Python,
+            Node.js, React.js, and HTML/CSS to develop clean and efficient code.
+            Check out my portfolio to see how I bring ideas to life through
+            technology!
           </p>
         </div>
       </div>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Information Form</title>
+    <style>
+      label {
+        display: block;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-size: 1.2rem;
+      }
+      button {
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+      #userInfo {
+        width: 100%;
+        height: 300px;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>User Information Form</h2>
+    <form id="userForm">
+      <label for="name">Name: </label>
+      <input type="text" id="name" name="name" required /><br />
+      <label for="email">Email: </label>
+      <input type="email" id="email" name="email" required /> <br />
+      <label for="mobile">Mobile Number: </label>
+      <input
+        type="tel"
+        id="mobile"
+        name="mobile"
+        pattern="[0-9]{10}"
+        required
+      /><br />
+      <label for="gender">Gender: </label>
+      <select id="gender" name="gender" required>
+        <option value="">Select</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="other">Other</option>
+      </select>
+      <label for="color">Favorite color: </label>
+      <input type="text" id="color" name="color" required /> <br />
+      <button type="button" onclick="displayUserInfo()">Submit</button>
+    </form>
+    <div>
+      <label for="userInfo">User Information: </label>
+      <input id="userInfo" aria-rowspan="4" readonly /> <br />
+    </div>
+
+    <script>
+      function displayUserInfo() {
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const mobile = document.getElementById("mobile").value;
+        const gender = document.getElementById("gender").value;
+        const color = document.getElementById("color").value;
+
+        if (
+          name === "" ||
+          email === "" ||
+          mobile === "" ||
+          gender === "" ||
+          color === ""
+        ) {
+          alert("Please fill out all the fields");
+          return;
+        }
+
+        const userInfo = `Name: ${name}\n\n Email: ${email}\n\n Mobile: ${mobile}\n\n Gender: ${gender}\n\n Fvourite Color: ${color}`;
+        document.getElementById("userInfo").value = userInfo;
+      }
+    </script>
+  </body>
+</html>
